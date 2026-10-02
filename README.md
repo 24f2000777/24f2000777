@@ -18,6 +18,26 @@
 
 Looking for AI/ML engineering roles where I can build LLM agents and RAG systems, evaluate them properly, and ship them behind solid backend services.
 
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider-light.svg" alt="Section divider" width="100%">
+</picture>
+</p>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
+  <img src="assets/metrics-light.svg" alt="Three verified numbers. Validation R2 0.5598 vs 0.3 competition baseline, drawn as two bars to scale. 6 featured projects. 10 graph nodes in Claim Court." width="100%">
+</picture>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider-light.svg" alt="Section divider" width="100%">
+</picture>
+</p>
+
 ## Architecture
 
 <picture>
@@ -25,16 +45,53 @@ Looking for AI/ML engineering roles where I can build LLM agents and RAG systems
   <img src="assets/stack-light.svg" alt="Layered diagram of the tools I use. Orchestration: LangGraph, LangChain. Retrieval: Chroma, FAISS, sentence-transformers, Tavily, Playwright. Models and ML: Groq, Gemini API, scikit-learn, LightGBM, XGBoost, pandas. Serving: FastAPI, Express, Celery, Redis, PostgreSQL, Docker. Frontend: Streamlit, Vue, Plotly." width="100%">
 </picture>
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider-light.svg" alt="Section divider" width="100%">
+</picture>
+</p>
+
 ## Evaluated Work
 
-| Project | What it does | Stack | Link |
-| --- | --- | --- | --- |
-| **Claim Court** | Two LLM agents argue opposite sides of a claim from the same evidence, a judge rules, and a citation audit checks the sources. | LangGraph, Groq, Chroma, Streamlit | [repo](https://github.com/24f2000777/claim-court) |
-| **LLM Quiz Solver** | Autonomous agent that scrapes quiz pages, runs generated Python and submits answers through a FastAPI service. | LangGraph, Groq, FastAPI, Playwright | [repo](https://github.com/24f2000777/llm-quiz-solver) |
-| **LLM Code Deployment** | API that takes a task request, generates a web app with an LLM and deploys it to GitHub Pages. | Node.js, Express, Gemini API | [repo](https://github.com/24f2000777/llm-code-deployment) |
-| **Cinema Audience Forecasting** | Predicts daily theater audience counts with a LightGBM and XGBoost ensemble. R2 0.5598 against a competition baseline of 0.3. | LightGBM, XGBoost, scikit-learn | [repo](https://github.com/24f2000777/cinema-audience-forecasting) |
-| **NAGRIK AI** | Team civic complaint platform. Designed and built the AI layer: the ML priority scorer and the RAG chatbot. | FastAPI, Vue, PostgreSQL, LangGraph, FAISS | [repo](https://github.com/24f2000777/MAY2026-Team-059) |
-| **Churn Dashboard** | RFM customer segmentation on retail transactions with a Streamlit dashboard. | pandas, Plotly, Streamlit | [repo](https://github.com/24f2000777/Churn_Dashboard) |
+<p align="center">
+<a href="https://github.com/24f2000777/claim-court">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/cards/claim-court-dark.svg">
+<img src="assets/cards/claim-court-light.svg" alt="Claim Court card. Pipeline: retrieve_docs, grade_doc, web_search, grade_web, then prosecutor and defender in parallel, judge_node and verify_citations. Stack: LangGraph, Groq, Chroma, Streamlit." width="400">
+</picture>
+</a>
+<a href="https://github.com/24f2000777/llm-quiz-solver">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/cards/llm-quiz-solver-dark.svg">
+<img src="assets/cards/llm-quiz-solver-light.svg" alt="LLM Quiz Solver card. Pipeline: FastAPI endpoint, LangGraph loop, scrape_page, run_code, send_post. Stack: LangGraph, Groq, FastAPI, Playwright." width="400">
+</picture>
+</a>
+<a href="https://github.com/24f2000777/llm-code-deployment">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/cards/llm-code-deployment-dark.svg">
+<img src="assets/cards/llm-code-deployment-light.svg" alt="LLM Code Deployment card. Pipeline: request, Gemini generates app, GitHub Pages deploy. Stack: Node.js, Express, Gemini API." width="400">
+</picture>
+</a>
+<a href="https://github.com/24f2000777/cinema-audience-forecasting">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/cards/cinema-audience-forecasting-dark.svg">
+<img src="assets/cards/cinema-audience-forecasting-light.svg" alt="Cinema Audience Forecasting card. Features feed LightGBM and XGBoost, combined into an ensemble. Validation R2 0.5598 vs 0.3 competition baseline. Stack: LightGBM, XGBoost, scikit-learn." width="400">
+</picture>
+</a>
+<a href="https://github.com/24f2000777/MAY2026-Team-059">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/cards/nagrik-ai-dark.svg">
+<img src="assets/cards/nagrik-ai-light.svg" alt="NAGRIK AI card. Pipeline: complaint in, classify_intent, RAG chatbot, with the priority scorer alongside. Stack: FastAPI, Vue, PostgreSQL, LangGraph, FAISS." width="400">
+</picture>
+</a>
+<a href="https://github.com/24f2000777/Churn_Dashboard">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="assets/cards/churn-dashboard-dark.svg">
+<img src="assets/cards/churn-dashboard-light.svg" alt="Churn Dashboard card. Pipeline: transactions, RFM, segments, Streamlit. Stack: pandas, Plotly, Streamlit." width="400">
+</picture>
+</a>
+</p>
 
 <details>
 <summary>Claim Court: how it works</summary>
@@ -73,29 +130,35 @@ The priority scorer is a scikit-learn `HistGradientBoostingRegressor` served thr
 
 </details>
 
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider-light.svg" alt="Section divider" width="100%">
+</picture>
+</p>
+
 ## Agent Trace
 
-Illustrative trace of a Claim Court run, using the real node names and order. The claim is made up for the example.
+Illustrative trace. The claim is made up for the example.
 
-```text
-claim: "Cold showers boost immunity"
-[00:00.0] retrieve_docs      searching document index
-[00:00.6] grade_doc          grading retrieved passages
-[00:01.4] web_search         query A: evidence for | query B: evidence against
-[00:03.1] grade_web          evidence ok, no rewrite needed
-[00:03.2] prosecutor         arguing the claim is false      (parallel)
-[00:03.2] defender           arguing the claim is true       (parallel)
-[00:06.8] interrupt          paused for human review
-[00:09.0] judge_node         ruling: supported | disputed | unsupported
-[00:11.5] verify_citations   checking each citation against its evidence
-[00:12.4] done               verdict and citation audit saved to checkpoint
-```
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/trace-dark.svg">
+  <img src="assets/trace-light.svg" alt="Animated terminal replaying an illustrative Claim Court run. It steps through retrieve_docs, grade_doc, web_search, grade_web, prosecutor and defender in parallel, a pause for human review, judge_node and verify_citations, then saves the verdict and citation audit to the checkpoint." width="100%">
+</picture>
+
+<p align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/divider-dark.svg">
+  <img src="assets/divider-light.svg" alt="Section divider" width="100%">
+</picture>
+</p>
 
 ## Currently Training
 
-- **Munim:** in progress.
-- **LedgerLens:** in progress.
-- **MoneyMentor:** in progress.
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/training-dark.svg">
+  <img src="assets/training-light.svg" alt="Three projects in progress: Munim, LedgerLens and MoneyMentor." width="100%">
+</picture>
 
 ## Limitations and Honest Notes
 
